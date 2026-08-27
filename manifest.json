@@ -1,0 +1,18 @@
+{
+  "background_color": "#ffffff",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "EMI PLANNER-LOAN CALCULATOR",
+  "orientation": "any",
+  "scope": "/ABRAR-EMI-CALCULATOR/",
+  "short_name": "EMI PLANNER-LOAN CALCULATOR",
+  "start_url": "/ABRAR-EMI-CALCULATOR/",
+  "theme_color": "#4f47e6",
+  "description": "Plan your loan with complete clarity - EMI, interest aur prepayment calculator",
+  "id": "EMIPLANNER",
+  "lang": "en",
+  "categories": [
+    "finance",
+    "utilities"
+  ]
+}
