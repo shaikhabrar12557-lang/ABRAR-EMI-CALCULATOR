@@ -1,0 +1,49 @@
+.logo{
+  cursor: pointer;
+  perspective: 500px;
+  transform-style: preserve-3d;
+  animation: rupeeSpin 3.6s linear infinite;
+  will-change: transform;
+}
+
+.logo:hover{
+  animation-duration: 1.2s;
+}
+
+.logo.is-paused{
+  animation-play-state: paused;
+}
+
+@keyframes rupeeSpin{
+  0%{
+    transform: perspective(500px) rotateY(0deg) rotateZ(0deg);
+  }
+  50%{
+    transform: perspective(500px) rotateY(180deg) rotateZ(10deg);
+  }
+  100%{
+    transform: perspective(500px) rotateY(360deg) rotateZ(0deg);
+  }
+}
+.word{
+  display: inline-block;
+  cursor: default;
+  transition: color 0.2s ease;
+}
+
+.word:hover{
+  color: #3668f5;
+  animation: wordMove 0.45s ease-in-out;
+}
+
+@keyframes wordMove{
+  0%, 100%{
+    transform: translateY(0) rotate(0deg);
+  }
+  30%{
+    transform: translateY(-4px) rotate(-3deg);
+  }
+  60%{
+    transform: translateY(1px) rotate(3deg);
+  }
+}
