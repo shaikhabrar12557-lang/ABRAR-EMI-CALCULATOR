@@ -22,11 +22,24 @@
     .layout{display:grid;grid-template-columns:1.08fr .92fr;gap:25px;align-items:start}.card{background:var(--paper);border:1px solid #edf0f5;border-radius:24px;box-shadow:var(--shadow)}.form-card{padding:28px}.result-card{position:sticky;top:20px;overflow:hidden}.result-head{padding:28px 28px 24px;background:linear-gradient(135deg,#1b3271,#315ee7);color:#fff}.result-head small{display:block;color:#cbd7ff;font-size:13px}.emi{font-size:44px;font-weight:800;letter-spacing:-1.7px;margin:3px 0 8px}.result-head p{margin:0;font-size:13px;color:#cbd7ff}.summary{padding:10px 28px 26px}.sum-row{display:flex;justify-content:space-between;padding:17px 0;border-bottom:1px solid var(--line);font-size:14px}.sum-row span{color:var(--muted)}.sum-row b{font-size:15px}.charge{margin:20px 28px 28px;padding:15px 16px;background:var(--mint);border-radius:15px;color:#185c48;font-size:13px}.charge b{display:block;font-size:16px;margin-top:3px}
     .section-title{font-size:18px;margin:0 0 4px;letter-spacing:-.3px}.section-sub{font-size:13px;color:var(--muted);margin:0 0 24px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}.field{margin-bottom:22px}.field.full{grid-column:1/-1}.field-label{display:flex;justify-content:space-between;align-items:center;margin-bottom:9px;font-size:13px;font-weight:700}.field-label span{font-weight:800;color:var(--blue);background:#eff3ff;border-radius:8px;padding:3px 7px}select,input[type=number]{width:100%;border:1px solid #dce2ec;background:#fff;border-radius:11px;padding:12px 13px;font:inherit;color:var(--ink);outline:none;transition:.2s}select:focus,input:focus{border-color:var(--blue);box-shadow:0 0 0 3px #3668f51c}input[type=range]{width:100%;accent-color:var(--blue);margin:5px 0 7px}.amount-input{position:relative}.amount-input i{position:absolute;left:13px;top:12px;color:var(--muted);font-style:normal}.amount-input input{padding-left:29px}.range-meta{display:flex;justify-content:space-between;color:#9ba4b3;font-size:11px}.divider{height:1px;background:var(--line);margin:28px 0}.advanced{margin-top:4px}.advanced summary{cursor:pointer;font-size:14px;font-weight:800;color:var(--navy);list-style:none;display:flex;justify-content:space-between;align-items:center}.advanced summary:after{content:'+';font-size:20px;font-weight:400}.advanced[open] summary:after{content:'−'}.advanced-body{padding-top:20px}.note{font-size:12px;color:var(--muted);margin:0 0 16px}.btn{border:0;background:var(--blue);color:#fff;border-radius:11px;padding:13px 16px;font-size:14px;font-weight:800;cursor:pointer;width:100%;transition:.2s}.btn:hover{background:#2857dc;transform:translateY(-1px)}.bank-chips{display:flex;gap:8px;flex-wrap:wrap}.chip{border:1px solid #dbe2ee;background:#fff;color:#46526a;padding:8px 11px;border-radius:9px;cursor:pointer;font-size:12px;font-weight:700}.chip.active{background:#edf2ff;border-color:#8ca8ff;color:#244dbb}.bank-result{font-size:13px;color:var(--green);margin:13px 0 0;font-weight:700}.schedule{display:none;margin-top:16px;overflow:auto;border:1px solid var(--line);border-radius:12px}.schedule table{width:100%;border-collapse:collapse;font-size:12px}.schedule th{background:#f7f9fc;text-align:right;color:#6c778b}.schedule td,.schedule th{white-space:nowrap;padding:10px;border-bottom:1px solid var(--line)}.schedule td:first-child,.schedule th:first-child{text-align:left}.foot{max-width:800px;color:#8993a4;font-size:11px;margin:25px auto 0;text-align:center}
     @media(max-width:820px){.hero,.layout{grid-template-columns:1fr}.result-card{position:static;order:-1}.top{margin-bottom:25px}.hero{margin-bottom:20px}.hero h1{font-size:37px}.form-card{padding:22px}.result-head{padding:23px}.emi{font-size:38px}}@media(max-width:440px){.shell{padding:18px 14px 45px}.tag{display:none}.grid{grid-template-columns:1fr}.field.full{grid-column:auto}.form-card{padding:19px}.summary{padding:8px 20px 20px}.charge{margin:16px 20px 20px}.emi{font-size:34px}}
+    body.dark{--ink:#e8ecf5;--muted:#98a2b8;--line:#2a3350;--paper:#161c2e;--bg:#0c1120;--navy:#0e1730;--blue:#5b86ff;--mint:#0f2b23;--green:#3fd18e;--orange:#ffad43;--shadow:0 18px 45px #00000055}
+    body.dark select,body.dark input[type=number]{background:#1c2340;border-color:#2f3a5e;color:var(--ink)}
+    body.dark .chip{background:#1c2340;border-color:#2f3a5e;color:#c3cbe0}
+    body.dark .chip.active{background:#26305a;border-color:#5b86ff;color:#cfe0ff}
+    body.dark .tag{background:#1c2340;color:#9ab2ff}
+    body.dark .field-label span{background:#1c2340}
+    body.dark .charge{color:#8ff0c8}
+    body.dark .schedule th{background:#1c2340;color:#9aa5c0}
+    .theme-toggle{border:1px solid #dbe2ee;background:#fff;color:#46526a;border-radius:100px;padding:8px 14px;font-size:12px;font-weight:700;cursor:pointer;margin-left:10px}
+    body.dark .theme-toggle{background:#1c2340;border-color:#2f3a5e;color:#c3cbe0}
+    .pdf-btn{border:1px solid #cbd5ff;background:#fff;color:var(--blue);border-radius:11px;padding:12px 16px;font-size:13px;font-weight:800;cursor:pointer;width:100%;margin-top:10px;transition:.2s}
+    .pdf-btn:hover{background:#eff3ff}
+    body.dark .pdf-btn{background:transparent;border-color:#3a4770}
   </style>
 </head>
 <body>
   <main class="shell">
-    <header class="top"><div class="brand"><span class="logo">₹</span> EMI Planner</div><span class="tag">Simple · Private · Free</span></header>
+    <header class="top"><div class="brand"><span class="logo">₹</span> EMI Planner</div><div><span class="tag">Simple · Private · Free</span><button class="theme-toggle" id="themeToggle" type="button">🌙 Dark mode</button></div></header>
     <section class="hero"><div><div class="eyebrow">Smart loan planning</div><h1>Plan your loan with<br>complete clarity.</h1><p>See your EMI, total interest and prepayment impact before you make a decision.</p></div><aside class="trust"><b>Every calculation happens in your browser.</b><span>Your personal information is never saved or shared.</span></aside></section>
     <section class="layout">
       <div class="card form-card">
@@ -46,7 +59,7 @@
           <button class="btn" id="scheduleBtn" type="button" style="margin-top:12px">Year-wise repayment schedule</button><div class="schedule" id="schedule"></div>
         </div></details>
       </div>
-      <aside class="card result-card"><div class="result-head"><small>Aapki estimated monthly EMI</small><div class="emi" id="emi">₹0</div><p>Interest rate ya tenure badalne par result turant update hoga.</p></div><div class="summary"><div class="sum-row"><span>Loan amount</span><b id="sumAmount">₹0</b></div><div class="sum-row"><span>Total interest</span><b id="interest">₹0</b></div><div class="sum-row"><span>Total repayment</span><b id="total">₹0</b></div><div class="sum-row"><span>Interest ka share</span><b id="interestPct">0%</b></div></div><div class="charge">Upfront charges (estimated)<b id="charges">₹0</b></div></aside>
+      <aside class="card result-card"><div class="result-head"><small>Aapki estimated monthly EMI</small><div class="emi" id="emi">₹0</div><p>Interest rate ya tenure badalne par result turant update hoga.</p></div><div class="summary"><div class="sum-row"><span>Loan amount</span><b id="sumAmount">₹0</b></div><div class="sum-row"><span>Total interest</span><b id="interest">₹0</b></div><div class="sum-row"><span>Total repayment</span><b id="total">₹0</b></div><div class="sum-row"><span>Interest ka share</span><b id="interestPct">0%</b></div></div><div class="charge">Upfront charges (estimated)<b id="charges">₹0</b></div><div style="padding:0 28px 28px"><button class="pdf-btn" id="pdfBtn" type="button">📄 Download PDF</button></div></aside>
     </section>
     <p class="foot">This is an indicative calculation. Final interest rate, fees and EMI depend on the lender, your credit profile and the final loan terms.</p>
   </main>
@@ -70,5 +83,74 @@
     $('loanType').onchange=fillBanks;$('bank').onchange=applyBank;sync('amountRange','amount');sync('rateRange','rate');sync('yearsRange','years');['fee','other'].forEach(id=>$(id).oninput=calc);$('prepayBtn').onclick=prepay;$('scheduleBtn').onclick=schedule;fillBanks();calc();
   </script>
   <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    // Dark mode toggle
+    (function(){
+      const btn = document.getElementById('themeToggle');
+      function apply(mode){
+        document.body.classList.toggle('dark', mode === 'dark');
+        btn.textContent = mode === 'dark' ? '☀️ Light mode' : '🌙 Dark mode';
+      }
+      const saved = localStorage.getItem('emiTheme') || 'light';
+      apply(saved);
+      btn.addEventListener('click', () => {
+        const next = document.body.classList.contains('dark') ? 'light' : 'dark';
+        localStorage.setItem('emiTheme', next);
+        apply(next);
+      });
+    })();
+
+    // PDF export
+    document.getElementById('pdfBtn').addEventListener('click', function(){
+      const { jsPDF } = window.jspdf;
+      const doc = new jsPDF();
+      const get = id => document.getElementById(id).textContent;
+      const loanType = document.getElementById('loanType').selectedOptions[0].textContent;
+      const bank = document.getElementById('bank').selectedOptions[0] ? document.getElementById('bank').selectedOptions[0].textContent : '';
+
+      doc.setFontSize(18);
+      doc.setTextColor(24, 43, 98);
+      doc.text('EMI Planner - Loan Summary', 14, 20);
+
+      doc.setFontSize(10);
+      doc.setTextColor(120, 120, 120);
+      doc.text('Generated on ' + new Date().toLocaleDateString('en-IN'), 14, 27);
+
+      doc.setDrawColor(230, 230, 230);
+      doc.line(14, 32, 196, 32);
+
+      const rows = [
+        ['Loan type', loanType],
+        ['Lender', bank],
+        ['Loan amount', get('sumAmount')],
+        ['Interest rate', document.getElementById('rateLabel').textContent],
+        ['Loan tenure', document.getElementById('yearsLabel').textContent],
+        ['Monthly EMI', get('emi')],
+        ['Total interest', get('interest')],
+        ['Total repayment', get('total')],
+        ['Interest share', get('interestPct')],
+        ['Upfront charges', get('charges')]
+      ];
+
+      let y = 45;
+      doc.setFontSize(12);
+      rows.forEach(([label, value]) => {
+        doc.setTextColor(90, 96, 112);
+        doc.text(label, 14, y);
+        doc.setTextColor(23, 32, 51);
+        doc.setFont(undefined, 'bold');
+        doc.text(String(value), 120, y);
+        doc.setFont(undefined, 'normal');
+        y += 10;
+      });
+
+      doc.setFontSize(9);
+      doc.setTextColor(150, 150, 150);
+      doc.text('This is an indicative calculation. Final terms depend on the lender and your credit profile.', 14, y + 10, { maxWidth: 180 });
+
+      doc.save('EMI-Summary.pdf');
+    });
+  </script>
 </body>
 </html>
